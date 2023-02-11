@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap');
+:root {
+  --body-bg: #f5f8ff;
+  --box-bg: #fff;
+  --input-bg: #f5f8ff;
+  --txt-color: #2f2d2f;
+  --txt-second-color: #ccc;
+  --border-color: #a6a9b0;
+  --box-shadow: rgba(149, 157, 165, .2) 0px 8px 24px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: "Montserra", sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+  background-color: var(--body-bg);
+  color: var(--txt-color);
+
+  display: flex;
+  justify-content: center;
+  padding-top: 100px;
+
+  height: 100vh;
+  padding: 100px;
+}
+
+.box{
+  background-color: var(--box-bg);
+  border-radius: 20px;
+  box-shadow: var(--box-shadow);
+  width:896px;
+  bottom: 50px;
+}
+
+.header{
+  margin-bottom: 30px;
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width:896px;
+  height:60px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  margin-top: -30px;
+  
+}
+.title{   
+  padding: 10px;
+  size: 16px;
+}
+
+.log{
+  width: 60px ;
+  height: 60px ;
+  margin-left: 100px;
+  padding: 5px;
+}
+
+@media only screen and (max-width: 800px) {
+  .box{
+    width:696px;
+    margin: 20px;
+  }
+  .header{
+    width:696px;
+  }
+  .input{
+    width:696px;
+  }
+}

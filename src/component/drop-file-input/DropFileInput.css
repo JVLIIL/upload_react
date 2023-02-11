@@ -1,0 +1,156 @@
+.input{
+    position: relative;
+    width: 400px;
+    height: 200px;
+    border: 2px dashed var(--border-color);
+    border-radius: 20px;
+    margin: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:830px;
+    margin-top: -20px;
+}
+.input input{
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.input:hover, 
+.input.dragover {
+    opacity: 0.6;
+}
+
+.label{
+    text-align: center;
+    color: var(--txt-second-color);
+    font-weight: 600;
+    padding: 10px;
+}
+
+.label img {
+    width: 100px;
+}
+.preview{
+    padding:10px;
+}
+.preview p {
+    font-weight: 30;
+}
+
+.item{
+    position: relative;
+    display: flex;
+    margin: 20px;
+}
+
+.item img{
+    width: 40px;
+    margin-right: 20px;
+}
+
+.info{
+    margin-top: 2px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.taille{
+    background-color: var(--box-bg);
+    width: 100px;
+    height:30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+    border: solid rgb(162, 155, 155) 2px;
+    margin-top: -10px;
+    
+}
+.del {
+    width: 20px;
+    height:20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 25px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+   
+}
+
+.ligne{
+    width: 100%;
+    height: 0px;
+    background-color: rgb(165, 162, 162);
+    border: solid rgb(165, 162, 162) 1px;
+    margin-right: 100px;
+    margin-top: -20px;
+    opacity: 0.4;
+   
+  }
+  .time{
+    margin-top: 30px;
+    margin-left: 55px;
+    position: absolute;
+  }
+  .button{
+    color: white;
+    background-color: black;
+    width:90px;
+    height: 38px ;
+    border-radius:40px;
+    text-align: center;
+    margin-top:10px;
+    margin-left: 780px;
+}
+.img{
+    width: 21px;
+    height: 21px;
+    margin-top: 5px;
+}
+.point{
+    width: 25px;
+    height: 25px;
+    margin-left: 75px;
+    margin-top: -20px;
+}
+.ligne2{
+    width: 900px;
+    height: 0px;
+    background-color: rgb(245, 244, 244);
+    border: solid rgba(247, 247, 247, 0.136) 1px;
+    margin-left: -160px;
+    margin-top: 70px;
+    margin-right: 20px; 
+    
+}
+.name{
+    white-space: nowrap; 
+    width: 100px; 
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+/*.name:hover {
+    overflow: visible;
+  }*/
+
+
+  @media only screen and (max-width: 800px) {
+    .input{
+        width:640px;
+      }
+      .button{
+         margin-left: 590px; 
+      }
+  }
